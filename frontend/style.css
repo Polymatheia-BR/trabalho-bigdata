@@ -1,0 +1,18 @@
+#graf_idade_container {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+label, select {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+select {
+  font-size: 20px;
+  border: 1px solid rgb(161, 161, 255);
+  border-radius: 10px;
+  padding-right: 40px;
+  text-align: center;
+}
