@@ -7,34 +7,39 @@
   <title>Dados Dengue</title>
 </head>
 <body>
-  <label for="years">Selecione um ano:</label><br>
-  <select name="years" id="year-select">
-    <option value="2017">2017</option>
-    <option value="2018">2018</option>
-    <option value="2019">2019</option>
-    <option value="2020">2020</option>
-    <option value="2021">2021</option>
-  </select>
+  <div id="select_container">
+    <label for="years">Selecione um ano:</label><br>
+    <select name="years" id="year-select">
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+    </select>
+    <br>
+    <label for="months">Selecione um mês:</label><br>
+    <select name="months" id="month-select">
+      <option value="0">Janeiro</option>
+      <option value="1">Fevereiro</option>
+      <option value="2">Março</option>
+      <option value="3">Abril</option>
+      <option value="4">Maio</option>
+      <option value="5">Junho</option>
+      <option value="6">Julho</option>
+      <option value="7">Agosto</option>
+      <option value="8">Setembro</option>
+      <option value="9">Outubro</option>
+      <option value="10">Novembro</option>
+      <option value="11">Dezembro</option>
+    </select>
+  </div>
+
   <div id="graf_idade_container">
     <canvas id="graf_idade"></canvas>
   </div>
   <div id="graf_bairro_container">
     <canvas id="graf_bairro"></canvas>
   </div>
-  <!-- <select name="" id="">
-    <option value="01">Janeiro</option>
-    <option value="02">Fevereiro</option>
-    <option value="03">Março</option>
-    <option value="04">Abril</option>
-    <option value="05">Maio</option>
-    <option value="06">Junho</option>
-    <option value="07">Julho</option>
-    <option value="08">Agosto</option>
-    <option value="09">Setembro</option>
-    <option value="10">Outubro</option>
-    <option value="11">Novembro</option>
-    <option value="12">Dezembro</option>
-  </select> -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
 </body>

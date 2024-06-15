@@ -1,6 +1,23 @@
 let ctx_idade = document.getElementById('graf_idade');
 let ctx_bairro = document.getElementById('graf_bairro')
 let year_select = document.getElementById('year-select')
+let month_select = document.getElementById('month-select')
+
+let ano_selecionado = 2017
+let mes_selecionado = 0 //Janeiro
+
+//Retorna um Array contendo todos as datas de um mês especifico em um ano especifico
+function diasNoMes(ano, mes) {
+  let datas = []
+  let data = new Date(ano, mes, 1)
+
+  while (data.getMonth() === mes) {
+    datas.push(new Date(data))
+    data.setDate(data.getDate() + 1)
+  }
+
+  return datas
+}
 
 function atualizar_graficos(ano) {
   //Por sexo
@@ -59,11 +76,17 @@ let graf_bairro = new Chart(ctx_bairro, {
 });
 
 year_select.addEventListener('change', (e) => {
-  atualizar_graficos(e.target.value)
+  ano_selecionado = e.target.value
+  atualizar_graficos(ano_selecionado)
+})
+
+month_select.addEventListener('change', (e) => {
+  mes_selecionado = parseInt(e.target.value)
+  console.log(ano_selecionado, mes_selecionado)
+  console.log(diasNoMes(ano_selecionado, mes_selecionado))
 })
 
 atualizar_graficos(2017)
-
 
 // function grafico_sexo() {
 //   fetch('http://127.0.0.1:5000/contagem_sexo')

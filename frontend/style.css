@@ -5,13 +5,19 @@
   margin-bottom: 100px;
 }
 
+#select_container {
+  background-color: 	#bae1ff;
+  padding: 20px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
 label, select {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 select {
   font-size: 20px;
-  border: 1px solid rgb(161, 161, 255);
   border-radius: 10px;
   padding-right: 40px;
   text-align: center;
