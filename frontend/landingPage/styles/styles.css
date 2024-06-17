@@ -89,6 +89,12 @@ footer {
   width: 100%;
 }
 
+header a {
+  color: white;
+  margin-left: 1400px;
+  text-decoration: underline;
+}
+
 footer a {
   color: white;
   text-decoration: underline;

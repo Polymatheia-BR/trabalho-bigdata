@@ -1,16 +1,101 @@
-#graf_idade_container {
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header a {
+  color: white;
+  margin-left: 1430px;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #4caf50;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.charts-container {
+  display: flex;
+  justify-content: center;
+  background: white;
+  margin-bottom: 0px;
+}
+
+#graf_sexo_container {
+  flex: 1;
   height: 50vh;
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
-#select_container {
-  background-color: 	#bae1ff;
-  padding: 20px;
-  border-radius: 10px;
-  width: fit-content;
+#graf_padroes_vento_container {
+  flex: 1;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
+
+#graf_faixa_etaria_container {
+  flex: 1;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#graf_mortalidade_container {
+  height: 50vh;
+  display: flex;  
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#grafico_meteorologico_container {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+.chart-title {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.chart-axis-label {
+  color: #333;
+  font-size: 16px;
+}
+
+.chart-line {
+  border-color: rgba(75, 192, 192, 0.8);
+}
+
+.chart-tick {
+  color: #333;
+}
+
 
 label, select {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -18,7 +103,36 @@ label, select {
 
 select {
   font-size: 20px;
+  border: 1px solid rgb(161, 161, 255);
   border-radius: 10px;
   padding-right: 40px;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #333;
+  margin-bottom: 100px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  margin: auto;
   text-align: center;
 }

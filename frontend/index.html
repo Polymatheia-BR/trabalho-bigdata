@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
@@ -7,39 +6,82 @@
   <title>Dados Dengue</title>
 </head>
 <body>
-  <div id="select_container">
-    <label for="years">Selecione um ano:</label><br>
-    <select name="years" id="year-select">
+  <header>
+    <h1>Dados da Dengue</h1>
+    <p>Juntos podemos combater a dengue!</p>
+    <a href="landingPage/index.html" class="btn">Voltar</a>
+  </header>
+  <div class="container">
+    <label for="year-select-1">Selecione dois anos para comparação:</label><br>
+    <select name="year1" id="year-select-1">
       <option value="2017">2017</option>
       <option value="2018">2018</option>
       <option value="2019">2019</option>
       <option value="2020">2020</option>
       <option value="2021">2021</option>
     </select>
-    <br>
-    <label for="months">Selecione um mês:</label><br>
-    <select name="months" id="month-select">
-      <option value="0">Janeiro</option>
-      <option value="1">Fevereiro</option>
-      <option value="2">Março</option>
-      <option value="3">Abril</option>
-      <option value="4">Maio</option>
-      <option value="5">Junho</option>
-      <option value="6">Julho</option>
-      <option value="7">Agosto</option>
-      <option value="8">Setembro</option>
-      <option value="9">Outubro</option>
-      <option value="10">Novembro</option>
-      <option value="11">Dezembro</option>
+    <select name="year2" id="year-select-2">
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
     </select>
   </div>
+  
+  <div class="charts-container">
+    <div id="graf_sexo_container">
+        <canvas id="graf_sexo"></canvas>
+    </div>
+    <div id="graf_faixa_etaria_container">
+        <canvas id="graf_faixa_etaria"></canvas>
+    </div>
+  </div>
 
-  <div id="graf_idade_container">
-    <canvas id="graf_idade"></canvas>
+  <div class="container">
+    <div id="graf_bairro_container">
+      <canvas id="graf_bairro"></canvas>
+    </div>
   </div>
-  <div id="graf_bairro_container">
-    <canvas id="graf_bairro"></canvas>
+
+  <div class="container">
+    <div id="graf_mortalidade_container">
+      <canvas id="graf_mortalidade"></canvas>
+    </div>
   </div>
+
+  <div class="container">
+    <div id="graf_evolucao_container">
+      <canvas id="graf_evolucao"></canvas>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="graf_sinais_clinicos_container">
+      <canvas id="graf_sinais_clinicos"></canvas>
+    </div>
+  </div>
+
+  <div class="charts-container">
+    <div id="grafico_meteorologico_container">
+      <canvas id="grafico_meteorologico"></canvas>
+    </div>
+      <div id="graf_padroes_vento_container">
+        <canvas id="graf_padroes_vento"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      Para mais informações, acesse o
+      <a
+        href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dengue"
+        >site oficial do Ministério da Saúde</a
+      >
+    </p>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
 </body>
